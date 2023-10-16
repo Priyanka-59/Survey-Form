@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link href="style.css" rel="styleSheet">
+  </script>
+</head>
+
+<body>
+  <h1>Survey Form</h1>
+  <div class="container">
+    <form id="surveyForm">
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required">
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required>
+      </div>
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required style = "height:20px;margin-bottom: 10px;">
+      </div>
+      <div class="form-group">
+        <label for="country">Country:</label>
+        <select id="country" required>
+          <option value="" disabled selected>Select a country</option>
+          <option value="USA">United States</option>
+          <option value="Canada">Canada</option>
+          <option value="UK">United Kingdom</option>
+          <option value="UK">India</option>
+          <option value="UK">London</option>
+          <!-- Add more countries here -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Gender:</label><br>
+        <input type="checkbox" id="male" name="gender" value="Male"> Male
+        <input type="checkbox" id="female" name="gender" value="Female"> Female
+      </div>
+      <div class="form-group">
+        <label for="profession">Profession:</label>
+        <input type="text" id="profession" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required style = "width : 73%;height:20px;margin-bottom: 10px;">
+      </div>
+      <div class="form-group">
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" required style = "width : 73%;height:20px;">
+      </div>
+      <div class="buttons">
+        <input type="button" value="SUBMIT" onclick="submitForm()">
+        <input type="button" value="RESET" onclick="resetForm()">
+      </div>
+    </form>
+  </div>
+  <p>&copy 2018 Survey Form.All Rights Reserved | Design by <h7 style = "color : black;">Priyanka</h7></p>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
